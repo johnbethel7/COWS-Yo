@@ -16,32 +16,49 @@
 						<Meta http-equiv="author" content="Kai Johnson" />
 						<Meta http-equiv="pragma" content="no cache" />
 						<Meta name="robots" content="nofollow" />
-						<!-- CSS because my style sheet isn't working -->
-						<!-- minimized to save space-->
-						<!--<style type="text/css">
-        				</style> -->
+						
 					</head>
 					<body>
-						<!-- The table of contents -->
-						<div class="welcomeText">
-						<h1 id="top">
-							<b>WELCOME TO THE CONFUSED OX WEBSITE</b>
-						</h1> <br />
-						</div>
-						<!--<h3>Table of Contents:</h3>
-							Dropdown follows -->
-							<div class="dropdown">
-						<button class="dropbtn">Dropdown</button>
-							<div class="dropdown-content">
-								<a href="CurProj.html">Current Projects</a>
-								<a href="">Completed Projects</a>
-								<a href="">Future Projects</a>
-							</div>
-						</div>
-						<!-- Regular TOC continues-->
-						<a href="about-us.html">About Us</a>
 						
-						<a href="#bottomOfPage" class = "bottomOfPage">Bottom of Page</a>
+							
+						<img src="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/hubs/thebigpicture/The-Big-Picture-photography-competition-round-379/Helen-Hunter_3499216a-large.jpg" id="swag" title="swag" alt="hot air balloons" width="1886"
+						height="200">
+							
+							<ul>
+  <li><a class="active" href="ConfusedOxWebsiteBuildV.01.html">Home</a></li>
+  <li><a class="active" href="about-us.html">About Us</a></li>
+  <li><a href="DevLog.html">Devlog</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Projects</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Projects.html">Current Projects</a>
+      <a href="Projects.html">Past Projects</a>
+      <a href="Projects.html">Future Projects</a>
+    </div>
+  </li>
+</ul>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+						
 						<br />
 						
 						<!-- Image of a blue ox-->
@@ -63,23 +80,10 @@
 						</p>
 						<hr />
 						<br />
-						<!-- For more information -->
-						<h4 id="moreInfo">For more information on exactly what we do</h4>
-						<!-- Kai's Email -->
-						<a href="mailto:jkai1616@gmail.com"> Email Kai </a>
-						<br />
-						<!-- Matt's Email -->
-						<a href="mailto:mattgrodo@gmail.com"> Email Matt </a>
-						<br />
-						<!-- John's Email -->
-						<a href="mailto:johnbethel7@gmail.com"> Email John </a>
-						<hr />
+						
 						<!-- Dog meme youtube video-->
 						<iframe id="dogmeme" width="560" height="315" src="https://www.youtube.com/embed/5dbG4wqN0rQ" frameborder="0" allowfullscreen></iframe>
 						<!-- Take you to the top of the page -->
-						<p>
-							<a href="#top">Top</a>
-						</p>
 						<!-- Website made by Kai Johnson -->
 						<h5>
 							<i id="bottomOfPage">Website made by Kai Johnson on August 29  
