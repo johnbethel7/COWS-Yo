@@ -1,1 +1,181 @@
-devlog
+<!DOCTYPE html>
+<html>
+<head>
+<title>Devlog!</title>
+<style>
+body {
+    font-family: "Courier New";
+    background-color: #27556C;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 0px;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: deeppink;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+			a:link {
+                color: #7799E7;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: purple;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: magenta;
+                text-decoration: underline;
+            }
+            
+            a:active {
+                color: darkcyan;
+                text-decoration: none;
+            }
+</style>
+</head>
+<body>
+<ul class="#ulol">
+  <li><a class="active" href="CatalinaSiteBuild">Home</a></li>
+  <li><a class="active" href="about-us.html">About Us</a></li>
+  <li><a href="DevLog.html">Devlog</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Projects</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Projects.html">Current Projects</a>
+      <a href="Projects.html">Past Projects</a>
+      <a href="Projects.html">Future Projects</a>
+    </div>
+  </li>
+</ul>
+
+
+<div class="container">
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<header>
+   <h1>Catalina GameDev Blog #1</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="about-us.html">Matt</a></li>
+    <li><a href="about-us.html">John</a></li>
+    <li><a href="about-us.html">Kai</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Welcome to our GameDev Blog!</h1>
+  <p>Welcome to Catalina Studio's GameDev blog! Don't know what a GameDev blog is? I suggest starting <a href="https://www.reddit.com/r/devblogs/">here</a> for more information. </p>
+  <p>Now then. Our <a href="about-us.html">team</a> consists of three up and coming game and software developers. Our goal is to make games and software that we would want to play and use, and we hope to make games for people other than ourselves to enjoy. We plan on bringing you updates as much as possible on upcoming games and projects. And even though our team doesn't see eye to eye on every aspect of every project, we do know this: we <i>love</i> to make and play games.
+ 	<br  />
+ 		<i>-Kai</i> </p>
+</article>
+
+<footer>Copyright &copy CatalinaStudios</footer>
+
+</div>
+
+
+</body>
+</html>
+
