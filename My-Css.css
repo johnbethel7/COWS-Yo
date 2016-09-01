@@ -99,3 +99,6 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.indexthing{
+    loat: left;
+}
