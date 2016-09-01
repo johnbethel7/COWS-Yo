@@ -100,7 +100,12 @@ a:active {
     color: darkcyan;
     text-decoration: none;
 }
+#CB {
+    text-align: center;
+}
     </style>
+}
+}
 </head>
 
 <body>
@@ -160,7 +165,16 @@ a:active {
                 </li>
             </ul>
         </nav>
-
+        <!-- Devlog submission -->
+        <form method="post" name="DLPostingForm" id="CB">
+            <p> Update your devlog <br />
+                <input type="text" name="username" size="20" maxlength="40" />
+            </p>
+            <p>
+                <textarea name="devLogInput" cols="40" rows="4"></textarea>
+            </p>
+            <input type="image" src="http://www.clker.com/cliparts/R/H/T/N/e/J/simple-gray-submit-button-four-md.png"  width="65" height="30" />
+        </form>
         <article>
             <h1>Welcome to our GameDev Blog!</h1>
             <p>Welcome to Catalina Studio's GameDev blog! Don't know what a GameDev blog is? I suggest starting <a href="https://www.reddit.com/r/devblogs/">here</a> for more information. </p>
