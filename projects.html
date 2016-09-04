@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="My-Css.css">
+    <title>Projects</title>
+    <style>
+        body {
+    font-family: "Courier New";
+    background-color: #27556C;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+header,
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul a {
+    text-decoration: none;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+a:link {
+    color: #7799E7;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+    text-decoration: none;
+}
+a:hover {
+    color: magenta;
+    text-decoration: underline;
+}
+a:active {
+    color: darkcyan;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+<img src="https://i.gyazo.com/d938c0d4b4ad272f94ce7a6d9786b7be.png" id="swag" title="swag" alt="hot air balloons" width="1886"
+                        height="200">
+    <ul class="#ulol">
+        <li><a class="active" href="CatalinaSiteBuild.html">Home</a>
+        </li>
+        <li><a class="active" href="about-us.html">About Us</a>
+        </li>
+        <li><a href="DevLog.html">Devlog</a>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Projects</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="Projects.html">Current Projects</a>
+                <a href="Projects.html">Past Projects</a>
+                <a href="Projects.html">Future Projects</a>
+            </div>
+        </li>
+    </ul>
+    <h1>Current Projects</h1>
+    <h2>These projects are currently being devloped and updated</h2>
+    <h1>Past Projects</h1>
+    <h2>These projects are fully complete and will no longer be updated</h2>
+    <h1>Future Projects</h1>
+    <h2>These projects have not begun devlopment</h2>
+    <!-- If you know a better way to reword this, please do -->
+    <h3>Other Projects</h3>
+    <h4>Projects that our developers worked on alone or with people outside the company</h4>
+
+</html>

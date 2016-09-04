@@ -1,0 +1,104 @@
+body {
+    font-family: "Courier New";
+    background-color: #171516;
+    text-align: center;
+}
+div.welcomeText {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 0 0 20px;
+    color: darkcyan;
+}
+h1 {
+    color: #314571;
+    text-align: center;
+}
+h2,
+h3,
+h4 {
+    color: #314571;
+    text-align: center;
+}
+p.one {
+    color: #314571;
+    text-align: center;
+    text-indent: 66px;
+    border-style: dotted;
+}
+h5 {
+    color: #314571;
+    text-align: center;
+    text-shadow: 1px 1px 3px #666666;
+}
+a:link {
+    color: deeppink;
+    text-decoration: none;
+    text-align: center;
+}
+a:visited {
+    color: deeppink;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+    text-align: center;
+}
+a:active {
+    color: darkcyan;
+    text-decoration: none;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.indexthing{
+    loat: left;
+}
